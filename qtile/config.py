@@ -10,7 +10,7 @@ from settings.path import qtile_path
 
 from os import path
 import subprocess
-
+#screens = []
 
 @hook.subscribe.startup_once
 def autostart():

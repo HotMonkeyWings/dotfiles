@@ -16,7 +16,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
     "Nerd Commenter"
     Plug 'preservim/nerdcommenter'
-
+    " Use release branch (recommend)
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'godlygeek/tabular'
+    Plug 'plasticboy/vim-markdown'
 call plug#end()
 
 

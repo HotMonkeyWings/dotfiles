@@ -176,5 +176,10 @@ colors:
 key_bindings:
   - { key: Return,   mods: Control|Shift, action: SpawnNewInstance }
 
+shell:
+  program: /bin/zsh
+  args:
+    - -c
+    - export LANG=en_US.UTF-8 && export LANG=en_US.UTF-8 && exec zsh
 
-background_opacity: 0.8  # value range is 0 ~ 1
+background_opacity: 1.0  # value range is 0 ~ 1

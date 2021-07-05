@@ -22,6 +22,9 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     # Toggle floating
     ([mod, "shift"], "f", lazy.window.toggle_floating()),
 
+    # Flameshot Capture
+    ([mod], "p", lazy.spawn('flameshot gui')),
+
     # Move windows up or down in current stack
     ([mod, "shift"], "j", lazy.layout.shuffle_down()),
     ([mod, "shift"], "k", lazy.layout.shuffle_up()),

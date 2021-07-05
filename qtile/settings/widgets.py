@@ -77,9 +77,9 @@ primary_widgets = [
         colour_no_updates=colors['text'],
         no_update_string='0',
         display_format='{updates}',
-        update_interval=1800,
-        custom_command='checkupdates',
+        update_interval=3600,
         padding=5,
+        max_chars=5,
     ),
 
     powerline('color3', 'color4'),
@@ -118,7 +118,7 @@ secondary_widgets = [
 
     powerline('color2', 'color1'),
 
-    widget.Clock(**base(bg='color2'), format='%d/%m/%Y - %H:%M '),
+    widget.Clock(**base(bg='color2'), format='%d/%m/%Y - %H:%M ', padding=5),
 
     powerline('dark', 'color2'),
 ]
