@@ -16,8 +16,12 @@ bspc config split_ratio         0.50
 bspc config borderless_monocle  true
 bspc config gapless_monocle     true
 
-bspc rule -a Gimp desktop=^8 follow=on state=floating
-bspc rule -a Chromium desktop=^2
-bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
+# Setup rules to open certain applications
+
+bspc rule -a Trello desktop=6 state=tiled follow=off
+bspc rule -a discord desktop=4 state=tiled follow=off
+
+~/.config/bspwm/scripts/startup.sh &
+#[$(pidof trello)] || trello &
+#[$(pidof Discord)] || discord &
+(sleep 5 && bspc rule -l | xargs bspc rule -r)

@@ -16,12 +16,14 @@ super + Escape
 
 # browser
 super + b
-    google-chrome-stable
-
+    brave
+    
 # file manager
 super + n
     nemo
 
+super + p
+    flameshot gui
 #
 # bspwm hotkeys
 #
@@ -48,9 +50,9 @@ super + g
 
 # volume controls
 XF86AudioRaiseVolume
-    pactl set-sink-volume @DEFAULT_SINK@ +5%
+    pactl set-sink-volume @DEFAULT_SINK@ +1%
 XF86AudioLowerVolume
-    pactl set-sink-volume @DEFAULT_SINK@ -5%
+    pactl set-sink-volume @DEFAULT_SINK@ -1%
 XF86AudioMute
     pactl set-sink-mute @DEFAULT_SINK@ toggle
 
@@ -72,7 +74,7 @@ super + ctrl + {m,x,y,z}
 
 # swap monitors
 super + shift + s 
-    bspc node -m last --follow
+    $HOME/.config/bspwm/scripts/swap_monitor.sh
 
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}
