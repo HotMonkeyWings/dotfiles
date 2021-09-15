@@ -1,0 +1,15 @@
+# Standard
+alias mc='padsp java -jar ~/TLauncher-2.8/TLauncher-2.8.jar && exit'
+alias cb='clipboard'
+alias comp='sudo vmware-modconfig --console --install-all'
+alias mods='sudo modprobe -a vmw_vmci vmmon'
+alias neofetch='neofetch --source /home/monkeywings/Documents/ASCII_Art/cute.txt'
+alias history='history 1'
+
+# For LSD
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
+
