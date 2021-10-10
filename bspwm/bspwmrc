@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 
 sxhkd &
 xrandr --output HDMI-0 --primary --mode 1920x1080 --rotate normal --output DP-0 --mode 1920x1080 --rotate normal --left-of HDMI-0
@@ -21,7 +21,6 @@ bspc config gapless_monocle     true
 bspc rule -a Trello desktop=6 state=tiled follow=off
 bspc rule -a discord desktop=4 state=tiled follow=off
 
-~/.config/bspwm/scripts/startup.sh &
-#[$(pidof trello)] || trello &
-#[$(pidof Discord)] || discord &
-(sleep 5 && bspc rule -l | xargs bspc rule -r)
+# Startup applications in designated workspaces
+[ -z "$(pidof trello)" ] && trello &
+[ -z "$(pidof Discord)" ] && discord &
