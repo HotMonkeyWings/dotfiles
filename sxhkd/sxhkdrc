@@ -74,7 +74,7 @@ super + ctrl + {m,x,y,z}
 
 # swap monitors
 super + shift + s 
-    $HOME/.config/bspwm/scripts/swap_monitor.sh
+    $HOME/.config/sxhkd/scripts/swap_monitor.sh
 
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}
