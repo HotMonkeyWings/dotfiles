@@ -182,4 +182,4 @@ shell:
     - -c
     - export LANG=en_US.UTF-8 && export LANG=en_US.UTF-8 && exec zsh
 
-background_opacity: 1.0  # value range is 0 ~ 1
+window.opacity: 1.0  # value range is 0 ~ 1

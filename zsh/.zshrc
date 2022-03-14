@@ -1,11 +1,25 @@
 # Enable colors and change prompt:
 #fpath+=$HOME/.config/zsh/typewritten
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+fpath+=/home/monkeywings/.local/bin
+path+=/home/monkeywings/.local/bin
+path+=$GEM_HOME/bin
+path+=$HOME/.config/composer/vendor/bin
+path+=$HOME/.solcx
+path+=$HOME/Desktop
+path+=$HOME/.local/share/solana/install/active_release/bin
+eval "$(pyenv init --path)"
+
+NPM_PACKAGES="${HOME}/.npm-packages"
+export PATH="$PATH:$NPM_PACKAGES/bin"
+export MANPATH="${MANPATH-$(manpath)}:$NPM_PACKAGES/share/man"
+
 autoload -U colors && colors
 autoload -U promptinit; promptinit
 #prompt typewritten
 zstyle :prompt:pure:git:stash show yes
 #zstyle ':completion:*' matcher-list 'r:[[:ascii:]]||[[:ascii:]]=** r:|=* m:{a-z\-}={A-Z\_}'
-
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 #prompt purity
 #prompt pure
 prompt purer
@@ -27,6 +41,12 @@ prompt purer
 setopt INC_APPEND_HISTORY SHARE_HISTORY
 export HISTFILE=~/.config/zsh/.zsh_history
 export SAVEHIST=10000
+
+# pipx
+#autoload -U bashcompinit
+#bashcompinit
+
+#eval "$(register-python-argcomplete pipx)"
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -99,3 +119,5 @@ bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
+
+export _JAVA_AWT_WM_NONREPARENTING=1

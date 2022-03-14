@@ -16,7 +16,7 @@ super + Escape
 
 # browser
 super + b
-    brave
+    brave 
     
 # file manager
 super + n
@@ -50,9 +50,9 @@ super + g
 
 # volume controls
 XF86AudioRaiseVolume
-    pactl set-sink-volume @DEFAULT_SINK@ +1%
+    pactl set-sink-volume @DEFAULT_SINK@ +5%
 XF86AudioLowerVolume
-    pactl set-sink-volume @DEFAULT_SINK@ -1%
+    pactl set-sink-volume @DEFAULT_SINK@ -5%
 XF86AudioMute
     pactl set-sink-mute @DEFAULT_SINK@ toggle
 
@@ -141,3 +141,4 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
