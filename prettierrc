@@ -1,9 +1,11 @@
 {
     "arrowParens": "always",
     "[typescript]": {
-        "editor.formatOnSave": true,
-        "editor.formatOnPaste": true
+        "editor.formatOnSave": false,
+        "editor.formatOnPaste": false
     },
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false,
     "trailingComma": "es5",
     "tabWidth": 4,
     "semi": true,

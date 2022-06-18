@@ -10,7 +10,7 @@ bspc monitor HDMI-0 -d 1 2 3
 bspc monitor DP-0 -d 4 5 6
 
 bspc config border_width        2
-bspc config window_gap          17
+bspc config window_gap          10
 
 bspc config split_ratio         0.50
 bspc config borderless_monocle  true
@@ -20,15 +20,17 @@ bspc config gapless_monocle     true
 
 bspc rule -a Trello desktop=6 state=tiled follow=off focus=off
 bspc rule -a discord desktop=4 state=tiled follow=off focus=off
-bspc rule -a 'SevTech Ages' desktop=1 state=fullscreen follow=off
 bspc rule -a 'Minecraft* 1.16.5' desktop=1 state=fullscreen follow=off
-bspc rule -a 'Minecraft*' desktop=1 state=fullscreen follow=off
 bspc rule -a 'RLCraft' desktop=1 state=fullscreen follow=off
 bspc rule -a 'TLauncher 2.841' desktop=1 state=tiled follow=off
 bspc rule -a 'obs' state=floating follow=on
 bspc rule -a 'Ubuntu Machine [Running] - Oracle VM VirtualBox' state=fullscreen
 bspc rule -a 'MetaMask Notification' state=floating
-bspc rule -a Alacritty state=floating focus=on rectangle=700x400+3103+187
+#bspc rule -a Alacritty state=floating focus=on rectangle=750x400+3050+187
+bspc rule -a Alacritty state=floating focus=on center=on rectangle=750x400+0+0
+bspc rule -a 'vscodium' focus=on follow=on desktop=2 
+bspc rule -a 'VSCodium' focus=on follow=on desktop=2 
+bspc rule -a 'Android Emulator - Pixel_4_API_31:5554' state=floating
 
 # Startup applications in designated workspaces
 #[ -z "$(pidof trello)" ] && trello &

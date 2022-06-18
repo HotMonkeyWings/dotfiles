@@ -16,13 +16,17 @@ super + Escape
 
 # browser
 super + b
-    brave 
+    brave
+
+super + shift + b
+    brave --incognito
+
     
 # file manager
 super + n
     nemo
 
-super + p
+super + shift + s
     flameshot gui
 #
 # bspwm hotkeys
@@ -73,8 +77,12 @@ super + ctrl + {m,x,y,z}
 #
 
 # swap monitors
-super + shift + s 
+super + shift + ctrl + Tab
     $HOME/.config/sxhkd/scripts/swap_monitor.sh
+
+# send focused to other monitor
+super + shift + Tab
+    bspc node -m next -f
 
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}

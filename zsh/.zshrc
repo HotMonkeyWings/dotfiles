@@ -8,7 +8,7 @@ path+=$HOME/.config/composer/vendor/bin
 path+=$HOME/.solcx
 path+=$HOME/Desktop
 path+=$HOME/.local/share/solana/install/active_release/bin
-eval "$(pyenv init --path)"
+#eval "$(pyenv init --path)"
 
 NPM_PACKAGES="${HOME}/.npm-packages"
 export PATH="$PATH:$NPM_PACKAGES/bin"
