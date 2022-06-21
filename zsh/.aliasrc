@@ -1,0 +1,25 @@
+# Standard
+alias mc='padsp java -jar ~/TLauncher-2.8/TLauncher-2.8.jar && exit'
+alias cb='clipboard'
+alias comp='sudo vmware-modconfig --console --install-all'
+alias mods='sudo modprobe -a vmw_vmci vmmon'
+alias neofetch='neofetch --source /home/monkeywings/Documents/ASCII_Art/cute.txt'
+#alias history='history 1'
+alias code='codium'
+
+# For LSD
+alias ls='lsd -l'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
+
+# Custom commands
+alias startp="source /home/monkeywings/.config/bash_scripts/workflow.sh startp"
+alias setp="source /home/monkeywings/.config/bash_scripts/workflow.sh setp"
+alias startc="source /home/monkeywings/.config/bash_scripts/workflow.sh startc"
+alias setc="source /home/monkeywings/.config/bash_scripts/workflow.sh setc"
+alias android-studio="/home/monkeywings/Documents/android-studio/bin/studio.sh&"
+
+# VM
+alias start-vm="qemu-system-x86_64 -audiodev pa,id=snd0 -device ich9-intel-hda -device hda-output,audiodev=snd0 -enable-kvm -drive file=/home/monkeywings/Fast/ShitdowsVM/Image.img -m 8G -cpu host -smp 6 -vga virtio -display sdl,gl=on"
