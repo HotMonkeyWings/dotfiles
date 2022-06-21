@@ -9,7 +9,7 @@ xsetroot -cursor_name left_ptr &
 bspc monitor HDMI-0 -d 1 2 3 
 bspc monitor DP-0 -d 4 5 6
 
-bspc config border_width        2
+bspc config border_width        1
 bspc config window_gap          10
 
 bspc config split_ratio         0.50
@@ -27,11 +27,11 @@ bspc rule -a 'obs' state=floating follow=on
 bspc rule -a 'Ubuntu Machine [Running] - Oracle VM VirtualBox' state=fullscreen
 bspc rule -a 'MetaMask Notification' state=floating
 #bspc rule -a Alacritty state=floating focus=on rectangle=750x400+3050+187
-bspc rule -a Alacritty state=floating focus=on center=on rectangle=750x400+0+0
+bspc rule -a Alacritty state=floating focus=on center=on rectangle=950x600+0+0
 bspc rule -a 'vscodium' focus=on follow=on desktop=2 
 bspc rule -a 'VSCodium' focus=on follow=on desktop=2 
 bspc rule -a 'Android Emulator - Pixel_4_API_31:5554' state=floating
 
 # Startup applications in designated workspaces
 #[ -z "$(pidof trello)" ] && trello &
-[ -z "$(pidof Discord)" ] && discord &
+#[ -z "$(pidof Discord)" ] && discord &
