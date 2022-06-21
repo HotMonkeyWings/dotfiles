@@ -12,12 +12,12 @@ font:
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
-    # family: JetBrains Mono
+    family: mononoki
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
     # family: SauceCodePro Nerd Font
-    family: mononoki
+    #    family: mononoki
 #    family: UbuntuMono Nerd Font Mono 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -32,7 +32,7 @@ font:
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
-    # family: JetBrains Mono
+    # family: mononoki
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
@@ -53,7 +53,7 @@ font:
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
-    # family: JetBrains Mono
+    # family: mononoki
     # family: UbuntuMono Nerd Font
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
@@ -73,7 +73,7 @@ font:
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
-    # family: JetBrains Mono
+    # family: mononoki
     # family: UbuntuMono Nerd Font
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
@@ -173,7 +173,14 @@ colors:
     magenta: '0xff46b0'
     cyan:    '0x59dffc'
     white:   '0xe6e6d1'
+key_bindings:
+  - { key: Return,   mods: Control|Shift, action: SpawnNewInstance }
 
+shell:
+  program: /bin/zsh
+  args:
+    - -c
+    - export LANG=en_US.UTF-8 && export LANG=en_US.UTF-8 && exec zsh
 
-
-background_opacity: 0.8  # value range is 0 ~ 1
+window:
+  opacity: 0.9  # value range is 0 ~ 1
