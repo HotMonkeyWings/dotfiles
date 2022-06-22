@@ -31,6 +31,7 @@ bspc rule -a Alacritty state=floating focus=on center=on rectangle=950x600+0+0
 bspc rule -a 'vscodium' focus=on follow=on desktop=2 
 bspc rule -a 'VSCodium' focus=on follow=on desktop=2 
 bspc rule -a 'Android Emulator - Pixel_4_API_31:5554' state=floating
+bspc rule -a 'Firefox Nightly' state=tiled
 
 # Startup applications in designated workspaces
 #[ -z "$(pidof trello)" ] && trello &

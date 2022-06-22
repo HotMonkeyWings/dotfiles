@@ -1,13 +1,7 @@
 # Enable colors and change prompt:
-#fpath+=$HOME/.config/zsh/typewritten
-export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+fpath+=$HOME/.config/zsh/typewritten
 fpath+=/home/monkeywings/.local/bin
 path+=/home/monkeywings/.local/bin
-path+=$GEM_HOME/bin
-path+=$HOME/.config/composer/vendor/bin
-path+=$HOME/.solcx
-path+=$HOME/Desktop
-path+=$HOME/.local/share/solana/install/active_release/bin
 #eval "$(pyenv init --path)"
 
 NPM_PACKAGES="${HOME}/.npm-packages"
