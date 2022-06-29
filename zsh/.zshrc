@@ -8,6 +8,9 @@ NPM_PACKAGES="${HOME}/.npm-packages"
 export PATH="$PATH:$NPM_PACKAGES/bin"
 export MANPATH="${MANPATH-$(manpath)}:$NPM_PACKAGES/share/man"
 
+#export LC_ALL=en_IN.UTF-8
+#export LANG=en_IN.UTF-8
+
 autoload -U colors && colors
 autoload -U promptinit; promptinit
 #prompt typewritten

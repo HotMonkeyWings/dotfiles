@@ -4,8 +4,12 @@
 
 # terminal emulator
 super + Return
-	alacritty
+	alacritty 
 
+# terminal emulator
+super + shift + Return
+	alacritty -e tmux -u attach || tmux -u
+  
 # program launcher
 super + r
 	rofi -show drun

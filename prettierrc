@@ -2,7 +2,13 @@
     "arrowParens": "always",
     "[typescript]": {
         "editor.formatOnSave": false,
-        "editor.formatOnPaste": false
+        "editor.formatOnPaste": false,
+        "tabWidth": 2
+    },
+    "[javascriptreact]": {
+        "editor.formatOnSave": false,
+        "editor.formatOnPaste": false,
+        "tabWidth": 2
     },
     "editor.formatOnSave": false,
     "editor.formatOnPaste": false,
