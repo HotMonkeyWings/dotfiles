@@ -21,8 +21,9 @@ bspc config gapless_monocle     true
 bspc rule -a Trello desktop=6 state=tiled follow=off focus=off
 bspc rule -a 'obs' state=floating follow=on
 bspc rule -a 'MetaMask Notification' state=floating
-bspc rule -a 'gl' state=floating center=on
+bspc rule -a 'gl' state=floating center=on rectange=720x576+0+0
 bspc rule -a 'mpv' state=floating center=on rectange=720x576+0+0
+bspc rule -a 'Pcsx2' state=floating center=on follow=on
 
 # Startup applications in designated workspaces
 #[ -z "$(pidof trello)" ] && trello &

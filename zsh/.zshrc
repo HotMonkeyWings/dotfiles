@@ -2,6 +2,11 @@
 fpath+=$HOME/.config/zsh/typewritten
 fpath+=/home/monkeywings/.local/bin
 path+=/home/monkeywings/.local/bin
+path+=/home/monkeywings/.local/share/solana/install/active_release/bin
+
+# For GoLang
+path+=/usr/local/go/bin
+path+=/home/monkeywings/go/bin
 #eval "$(pyenv init --path)"
 
 NPM_PACKAGES="${HOME}/.npm-packages"

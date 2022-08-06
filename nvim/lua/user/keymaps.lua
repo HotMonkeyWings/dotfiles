@@ -73,3 +73,4 @@ keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 -- Formatting
 keymap("n", "<A-S-f>", ":Format<CR>", opts)
+
