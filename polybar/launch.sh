@@ -10,14 +10,10 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 #polybar top &
 #polybar top_external &
-polybar --config=~/.config/polybar/config-main.ini right &
-polybar --config=~/.config/polybar/config-main.ini middle &
-polybar --config=~/.config/polybar/config-main.ini left &
+polybar --config=~/.config/polybar/config-main.ini main &
 
 
-polybar --config=~/.config/polybar/config-side.ini right &
-polybar --config=~/.config/polybar/config-side.ini middle &
-polybar --config=~/.config/polybar/config-side.ini left &
+polybar --config=~/.config/polybar/config-side.ini main &
 
 #secondary=$(xrandr -q | grep 'DP-0')
 #if [[$secondary = *connnected* ]]; then
