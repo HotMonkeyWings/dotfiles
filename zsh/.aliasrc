@@ -13,6 +13,10 @@ alias l='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
+<<<<<<< HEAD
+=======
+alias ll='lsd -l'
+>>>>>>> NewLaptopBranch
 
 # Custom commands
 alias startp="source /home/monkeywings/.config/bash_scripts/workflow.sh startp"

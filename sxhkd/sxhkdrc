@@ -4,8 +4,17 @@
 
 # terminal emulator
 super + Return
+<<<<<<< HEAD
 	alacritty
 
+=======
+	alacritty 
+
+# terminal emulator
+super + shift + Return
+	alacritty -e tmux -u attach || tmux -u
+  
+>>>>>>> NewLaptopBranch
 # program launcher
 super + r
 	rofi -show drun
@@ -76,6 +85,17 @@ super + ctrl + {m,x,y,z}
 # focus/swap
 #
 
+<<<<<<< HEAD
+=======
+# swap monitors
+super + shift + ctrl + Tab
+    $HOME/.config/sxhkd/scripts/swap_monitor.sh
+
+# send focused to other monitor
+super + shift + Tab
+    bspc node -m next -f
+
+>>>>>>> NewLaptopBranch
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}

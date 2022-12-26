@@ -8,8 +8,12 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # Launch Polybar, using default config location ~/.config/polybar/config
 
+<<<<<<< HEAD
 polybar top &
 #polybar top_external &
+=======
+polybar --config=~/.config/polybar/config-main.ini main &
+>>>>>>> NewLaptopBranch
 
 #secondary=$(xrandr -q | grep 'DP-0')
 #if [[$secondary = *connnected* ]]; then

@@ -1,4 +1,5 @@
 # Enable colors and change prompt:
+<<<<<<< HEAD
 #fpath+=$HOME/.config/zsh/typewritten
 export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 fpath+=/home/monkeywings/.local/bin
@@ -8,12 +9,28 @@ path+=$HOME/.config/composer/vendor/bin
 path+=$HOME/.solcx
 path+=$HOME/Desktop
 path+=$HOME/.local/share/solana/install/active_release/bin
+=======
+fpath+=$HOME/.config/zsh/typewritten
+fpath+=/home/monkeywings/.local/bin
+path+=/home/monkeywings/.local/bin
+path+=/home/monkeywings/.local/share/solana/install/active_release/bin
+
+# For GoLang
+path+=/usr/local/go/bin
+path+=/home/monkeywings/go/bin
+>>>>>>> NewLaptopBranch
 #eval "$(pyenv init --path)"
 
 NPM_PACKAGES="${HOME}/.npm-packages"
 export PATH="$PATH:$NPM_PACKAGES/bin"
 export MANPATH="${MANPATH-$(manpath)}:$NPM_PACKAGES/share/man"
 
+<<<<<<< HEAD
+=======
+#export LC_ALL=en_IN.UTF-8
+#export LANG=en_IN.UTF-8
+
+>>>>>>> NewLaptopBranch
 autoload -U colors && colors
 autoload -U promptinit; promptinit
 #prompt typewritten

@@ -98,3 +98,7 @@ button selected {
   border-radius: 3px;
   background-color: @emphasis;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> NewLaptopBranch

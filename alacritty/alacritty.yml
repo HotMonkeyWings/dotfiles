@@ -14,7 +14,11 @@ font:
     style: Bold Italic
 
   # Point size
+<<<<<<< HEAD
   size: 11.0
+=======
+  size: 12.0
+>>>>>>> NewLaptopBranch
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -48,6 +52,7 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
+<<<<<<< HEAD
 colors:
   primary:
     background: "#11121D"
@@ -70,18 +75,87 @@ colors:
     magenta: "#bb9af7"
     cyan: "#0db9d7"
     white: "#acb0d0"
+=======
+  #colors:
+  #  primary:
+  #    background: "#11121D"
+  #    foreground: "#a9b1d6"
+  #  normal:
+  #    black: "#32344a"
+  #    red: "#f7768e"
+  #    green: "#9ece6a"
+  #    yellow: "#e0af68"
+  #    blue: "#7aa2f7"
+  #    magenta: "#ad8ee6"
+  #    cyan: "#449dab"
+  #    white: "#787c99"
+  #  bright:
+  #    black: "#444b6a"
+  #    red: "#ff7a93"
+  #    green: "#b9f27c"
+  #    yellow: "#ff9e64"
+  #    blue: "#7da6ff"
+  #    magenta: "#bb9af7"
+  #    cyan: "#0db9d7"
+  #    white: "#acb0d0"
+  #
+colors:
+  # Default colors
+  primary:
+    background: '0x1e2127'
+    foreground: '0xabb2bf'
+    bright_foreground: '0xe6efff'
+  # Normal colors
+  normal:
+    black:   '0x1e2127'
+    red:     '0xe06c75'
+    green:   '0x98c379'
+    yellow:  '0xd19a66'
+    blue:    '0x61afef'
+    magenta: '0xc678dd'
+    cyan:    '0x56b6c2'
+    white:   '0x828791'
+  # Bright colors
+  bright:
+    black:   '0x5c6370'
+    red:     '0xe06c75'
+    green:   '0x98c379'
+    yellow:  '0xd19a66'
+    blue:    '0x61afef'
+    magenta: '0xc678dd'
+    cyan:    '0x56b6c2'
+    white:   '0xe6efff'
+  dim:
+    black:   '0x1e2127'
+    red:     '0xe06c75'
+    green:   '0x98c379'
+    yellow:  '0xd19a66'
+    blue:    '0x61afef'
+    magenta: '0xc678dd'
+    cyan:    '0x56b6c2'
+    white:   '0x828791'
+>>>>>>> NewLaptopBranch
 
 key_bindings:
   - { key: Return,   mods: Control|Shift, action: SpawnNewInstance }
 
 shell:
   program: /bin/zsh
+<<<<<<< HEAD
   args:
     - -c
     - export LANG=en_US.UTF-8 && export LANG=en_US.UTF-8 && exec zsh
     - -l
     - -c
     - "tmux"
+=======
+  args: 
+    #    - --login
+    - -c
+    - export LANG=en_US.UTF-8 && export LAND=en_US.UTF-8 && exec zsh
+      #- -c
+      #    - "tmux -u attach || tmux -u"
+>>>>>>> NewLaptopBranch
 
 window:
   opacity: 1.0  # value range is 0 ~ 1

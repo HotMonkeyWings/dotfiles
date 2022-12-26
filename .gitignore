@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 BraveSoftware/
 Lindo/
 VSCodium/
@@ -21,3 +22,7 @@ user-dirs.locale
 vlc/
 whoozle.github.io/
 zsh/.zsh_history
+=======
+zsh/.zsh_history
+nvim/autoload/plugged/coc.nvim
+>>>>>>> NewLaptopBranch
