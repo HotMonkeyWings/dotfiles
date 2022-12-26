@@ -1,13 +1,11 @@
 #!/bin/sh
 
 sxhkd &
-xrandr --output HDMI-0 --primary --mode 1920x1080 --rotate normal --output DP-0 --mode 1920x1080 --rotate normal --left-of HDMI-0
 ~/.config/polybar/launch.sh &
 
 xsetroot -cursor_name left_ptr &
 
-bspc monitor HDMI-0 -d 1 2 3
-bspc monitor DP-0 -d 4 5
+bspc monitor eDP-1 -d 1 2 3 4 5
 
 bspc config border_width        1
 bspc config window_gap          0
