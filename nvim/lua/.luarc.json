@@ -1,0 +1,19 @@
+{
+    "workspace.library": [
+        "/home/monkeywings/.config/nvim",
+        "/home/monkeywings/.local/share/nvim/lazy/lazy.nvim",
+        "/home/monkeywings/.local/share/nvim/lazy/nvim-treesitter",
+        "/home/monkeywings/.local/share/nvim/lazy/nvim-lspconfig",
+        "/home/monkeywings/.local/share/nvim/lazy/mason-lspconfig.nvim",
+        "/home/monkeywings/.local/share/nvim/lazy/mason.nvim",
+        "/home/monkeywings/.local/share/nvim/lazy/plenary.nvim",
+        "/home/monkeywings/.local/share/nvim/lazy/telescope.nvim",
+        "/home/monkeywings/.local/share/nvim/lazy/netrw.nvim",
+        "/usr/share/nvim/runtime",
+        "/usr/share/nvim/runtime/pack/dist/opt/matchit",
+        "/usr/lib/nvim",
+        "/home/monkeywings/.config/nvim/after",
+        "/home/monkeywings/.local/state/nvim/lazy/readme",
+        "${3rd}/luassert/library"
+    ]
+}

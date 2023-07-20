@@ -1,0 +1,23 @@
+{
+  "LuaSnip": { "branch": "master", "commit": "a658ae2906344a1d2b9c507738e585cf68e685c7" },
+  "awesome-flutter-snippets": { "branch": "master", "commit": "48d4b8ba44dc0133c2299d9d810eceb5efa441a7" },
+  "cmp-buffer": { "branch": "main", "commit": "3022dbc9166796b644a841a02de8dd1cc1d311fa" },
+  "cmp-nvim-lsp": { "branch": "main", "commit": "44b16d11215dce86f253ce0c30949813c0a90765" },
+  "cmp-nvim-lua": { "branch": "main", "commit": "f12408bdb54c39c23e67cab726264c10db33ada8" },
+  "cmp-path": { "branch": "main", "commit": "91ff86cd9c29299a64f968ebb45846c485725f23" },
+  "cmp_luasnip": { "branch": "master", "commit": "18095520391186d634a0045dacaa346291096566" },
+  "diagflow.nvim": { "branch": "main", "commit": "c555581be851e6ff55532b43d1e9dcf7043a6082" },
+  "flutter-riverpod-snippets": { "branch": "master", "commit": "ee10f52d4e2f75bf3ac3fa67d441b493e5770fbc" },
+  "friendly-snippets": { "branch": "main", "commit": "6e0afe3be0ba43ef03d495a529de8fb22721c0d0" },
+  "lazy.nvim": { "branch": "main", "commit": "da8b00581a52f5f87ad2aba9f52171fda7491f18" },
+  "lsp-zero.nvim": { "branch": "v1.x", "commit": "de0e7d7c75cb032107d4a728aa0a63a61d8e5909" },
+  "mason-lspconfig.nvim": { "branch": "main", "commit": "fa50cc2540210845fccc3c0b9762417189a563a2" },
+  "mason.nvim": { "branch": "main", "commit": "5ad3e113b0c3fde3caba8630599373046f6197e8" },
+  "netrw.nvim": { "branch": "master", "commit": "596435bd2f5b0162b86c97ca8244e2b0862d3a4a" },
+  "nvim-cmp": { "branch": "main", "commit": "c4e491a87eeacf0408902c32f031d802c7eafce8" },
+  "nvim-lspconfig": { "branch": "master", "commit": "deade69789089c3da15237697156334fb3e943f0" },
+  "nvim-treesitter": { "branch": "master", "commit": "572a15f171ce1a69ed91ea642ae77af5b5d295fb" },
+  "plenary.nvim": { "branch": "master", "commit": "bda256fab0eb66a15e8190937e417e6a14ee5d72" },
+  "telescope.nvim": { "branch": "master", "commit": "d88094fbfd84b297178252230f6faf0e7d2f7650" },
+  "tokyonight.nvim": { "branch": "main", "commit": "284667adfff02b9a0adc65968c553c6096b543b6" }
+}
