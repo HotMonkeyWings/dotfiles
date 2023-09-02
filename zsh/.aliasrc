@@ -22,5 +22,8 @@ alias startc="source /home/monkeywings/.config/bash_scripts/workflow.sh startc"
 alias setc="source /home/monkeywings/.config/bash_scripts/workflow.sh setc"
 alias android-studio="/home/monkeywings/Documents/android-studio/bin/studio.sh&"
 
+alias pbcopy='xsel --clipboard --input'
+alias pbpaste='xsel --clipboard --output'
+
 # VM
 alias start-vm="qemu-system-x86_64 -audiodev pa,id=snd0 -device ich9-intel-hda -device hda-output,audiodev=snd0 -enable-kvm -drive file=/home/monkeywings/Fast/ShitdowsVM/Image.img -m 8G -cpu host -smp 6 -vga virtio -display sdl,gl=on"

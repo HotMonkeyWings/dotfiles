@@ -3,6 +3,7 @@ fpath+=$HOME/.config/zsh/typewritten
 fpath+=/home/monkeywings/.local/bin
 path+=/home/monkeywings/.local/bin
 path+=/home/monkeywings/.local/share/solana/install/active_release/bin
+path+=/home/monkeywings/Android/Sdk/cmdline-tools/latest/bin
 
 # For GoLang
 path+=/usr/local/go/bin
@@ -68,6 +69,9 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 
+bindkey -v
+bindkey '^R' history-incremental-search-backward
+
 # Change cursor shape for different vi modes.
 function zle-keymap-select {
   if [[ ${KEYMAP} == vicmd ]] ||
@@ -123,3 +127,8 @@ bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
 export _JAVA_AWT_WM_NONREPARENTING=1
+
+# Android stuff
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools

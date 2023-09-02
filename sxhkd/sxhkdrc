@@ -28,7 +28,7 @@ super + shift + b
     
 # file manager
 super + n
-    nemo
+    pcmanfm
 
 super + shift + s
     flameshot gui

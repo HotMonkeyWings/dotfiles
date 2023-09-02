@@ -28,6 +28,12 @@ Plugins = {
         }
     },
 
+    -- Formatting
+    {
+        "jose-elias-alvarez/null-ls.nvim",
+        "MunifTanjim/prettier.nvim"
+    },
+
     -- Highlighter
     {
         "nvim-treesitter/nvim-treesitter",
